@@ -40,9 +40,9 @@ npx skills add kangarooking/promo-creator-skills
 
 一支 90 秒瑞士国际主义风开源项目宣传片。Cangjie Skill 的价值不在于“又一个读书总结工具”，而在于把高价值书籍的方法论编译成 Agent 可以调用的触发条件、执行步骤、边界和测试。好的开源项目不是把 README 录一遍，而是把它真正值得被记住的系统讲清楚。
 
-[观看 MP4](demos/cangjie-skill-promo.mp4)
+[在 Bilibili 实时播放](https://www.bilibili.com/video/BV1LS5t6CESM/)
 
-<video src="demos/cangjie-skill-promo.mp4" controls width="100%"></video>
+> GitHub README 会清洗外部播放器 iframe，不能直接内嵌 B 站播放器；点击上面的链接可在 Bilibili 实时播放。
 
 ---
 
@@ -155,8 +155,7 @@ promo-creator-skills/
 │   └── mureka.py
 └── demos/
     ├── workbuddy-commercial-launch.mp4
-    ├── workbuddy-ui-groove.mp4
-    └── cangjie-skill-promo.mp4
+    └── workbuddy-ui-groove.mp4
 ```
 
 仓库根目录的 `SKILL.md` 是一个轻量入口，方便只识别根 skill 的安装器；具体流程仍然在各个 `promo-*` 子 skill 中。

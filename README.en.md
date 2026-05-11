@@ -40,9 +40,9 @@ Software-demo BGM direction: cleaner rhythm, UI-card timing, workflow motion, an
 
 A 90-second Swiss International-style promo for an open-source meta-skill that compiles books into callable Agent Skills. The point is not louder claims; it is making a valuable method visible: book knowledge becomes triggers, steps, boundaries, and tests an agent can actually use.
 
-[Watch MP4](demos/cangjie-skill-promo.mp4)
+[Watch on Bilibili](https://www.bilibili.com/video/BV1LS5t6CESM/)
 
-<video src="demos/cangjie-skill-promo.mp4" controls width="100%"></video>
+> GitHub README sanitizes external player iframes, so the Bilibili player cannot be embedded directly here. Use the link above for real-time playback on Bilibili.
 
 ---
 
@@ -153,8 +153,7 @@ promo-creator-skills/
 │   └── mureka.py
 └── demos/
     ├── workbuddy-commercial-launch.mp4
-    ├── workbuddy-ui-groove.mp4
-    └── cangjie-skill-promo.mp4
+    └── workbuddy-ui-groove.mp4
 ```
 
 `SKILL.md` at the repository root is a lightweight entrypoint for installers that expect a root skill file; the detailed workflow still lives in the `promo-*` folders.

@@ -24,17 +24,13 @@ npx skills add kangarooking/promo-creator-skills
 
 更像现代产品发布广告片：有 beat、bass、hook 和 CTA 推进感。适合产品上架、新能力发布、商业展示。
 
-[观看 MP4](demos/workbuddy-commercial-launch.mp4)
-
-<video src="demos/workbuddy-commercial-launch.mp4" controls width="100%"></video>
+[在 Bilibili 实时播放](https://www.bilibili.com/video/BV11h5t6dELW/)
 
 ### WorkBuddy OPC · Clean UI Demo Groove
 
 更像高级软件 UI 演示片：节奏干净，服务界面、卡片矩阵、流程线和时间线卡点。
 
-[观看 MP4](demos/workbuddy-ui-groove.mp4)
-
-<video src="demos/workbuddy-ui-groove.mp4" controls width="100%"></video>
+[在 Bilibili 实时播放](https://www.bilibili.com/video/BV1m45t6bEFM/)
 
 ### Cangjie Skill · 开源项目宣传片
 
@@ -42,7 +38,7 @@ npx skills add kangarooking/promo-creator-skills
 
 [在 Bilibili 实时播放](https://www.bilibili.com/video/BV1LS5t6CESM/)
 
-> GitHub README 会清洗外部播放器 iframe，不能直接内嵌 B 站播放器；点击上面的链接可在 Bilibili 实时播放。
+> GitHub README 会清洗外部播放器 iframe，不能直接内嵌 B 站播放器；点击链接可在 Bilibili 实时播放。
 
 ---
 
@@ -142,6 +138,9 @@ https://github.com/owner/project
 
 ```text
 promo-creator-skills/
+├── README.md                 # 中文默认介绍
+├── README.en.md              # English README
+├── SKILL.md                  # skill pack 入口
 ├── promo-brief/              # 产品研究与创意简报
 ├── promo-storyboard/         # 逐镜头分镜
 ├── promo-asset-producer/     # 素材生产与素材计划
@@ -151,11 +150,8 @@ promo-creator-skills/
 ├── references/
 │   ├── mureka_prompt_guide.md
 │   └── product_promo_bgm_prompting.md
-├── scripts/
-│   └── mureka.py
-└── demos/
-    ├── workbuddy-commercial-launch.mp4
-    └── workbuddy-ui-groove.mp4
+└── scripts/
+    └── mureka.py
 ```
 
 仓库根目录的 `SKILL.md` 是一个轻量入口，方便只识别根 skill 的安装器；具体流程仍然在各个 `promo-*` 子 skill 中。
@@ -188,7 +184,7 @@ promo-creator-skills/
 - 这是 skill pack，不是托管视频编辑器。
 - 最终质量取决于产品素材质量和本地渲染环境。
 - Mureka 生成有随机性，建议一次生成 2-3 条，放回视频里看，而不是单独听音频决定。
-- 本地完整生产过程放在 `outputs/`，默认不进 git；公开案例放在 `demos/`。
+- 本地完整生产过程放在 `outputs/`，默认不进 git；公开案例建议上传到视频平台后在 README 引用。
 
 ---
 

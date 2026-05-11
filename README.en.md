@@ -24,17 +24,13 @@ If your skill runner does not support `npx skills add`, copy the `promo-*` folde
 
 Modern product-launch BGM direction: beat, bass, hook, and CTA momentum. Useful when the video should feel like a launch film rather than background UI music.
 
-[Watch MP4](demos/workbuddy-commercial-launch.mp4)
-
-<video src="demos/workbuddy-commercial-launch.mp4" controls width="100%"></video>
+[Watch on Bilibili](https://www.bilibili.com/video/BV11h5t6dELW/)
 
 ### WorkBuddy OPC · Clean UI Demo Groove
 
 Software-demo BGM direction: cleaner rhythm, UI-card timing, workflow motion, and enough energy to carry real interface shots.
 
-[Watch MP4](demos/workbuddy-ui-groove.mp4)
-
-<video src="demos/workbuddy-ui-groove.mp4" controls width="100%"></video>
+[Watch on Bilibili](https://www.bilibili.com/video/BV1m45t6bEFM/)
 
 ### Cangjie Skill · Open Source Project Promo
 
@@ -42,7 +38,7 @@ A 90-second Swiss International-style promo for an open-source meta-skill that c
 
 [Watch on Bilibili](https://www.bilibili.com/video/BV1LS5t6CESM/)
 
-> GitHub README sanitizes external player iframes, so the Bilibili player cannot be embedded directly here. Use the link above for real-time playback on Bilibili.
+> GitHub README sanitizes external player iframes, so Bilibili players cannot be embedded directly here. Use the links above for real-time playback on Bilibili.
 
 ---
 
@@ -140,6 +136,9 @@ Use promo-editor and promo-music-maker. I already have the storyboard and assets
 
 ```text
 promo-creator-skills/
+├── README.md                 # Chinese default README
+├── README.en.md              # English README
+├── SKILL.md                  # skill pack entrypoint
 ├── promo-brief/              # product research and creative brief
 ├── promo-storyboard/         # shot-by-shot visual specs
 ├── promo-asset-producer/     # generated and sourced asset planning
@@ -149,11 +148,8 @@ promo-creator-skills/
 ├── references/
 │   ├── mureka_prompt_guide.md
 │   └── product_promo_bgm_prompting.md
-├── scripts/
-│   └── mureka.py
-└── demos/
-    ├── workbuddy-commercial-launch.mp4
-    └── workbuddy-ui-groove.mp4
+└── scripts/
+    └── mureka.py
 ```
 
 `SKILL.md` at the repository root is a lightweight entrypoint for installers that expect a root skill file; the detailed workflow still lives in the `promo-*` folders.
@@ -188,7 +184,7 @@ The skills can still design BGM prompts without an API key; they only call Murek
 - This is a skill pack, not a hosted video editor.
 - Final visual quality depends on available product assets and the agent's render environment.
 - Mureka output can vary; generate 2-3 candidates and pick by watching the video, not by listening in isolation.
-- Large local production runs are ignored by git; curated public examples live in `demos/`.
+- Large local production runs are ignored by git; curated public examples should be uploaded to a video platform and linked from the README.
 
 ---
 

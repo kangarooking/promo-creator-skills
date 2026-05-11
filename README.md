@@ -2,9 +2,13 @@
 
 English · [中文](README.zh.md)
 
-> Turn a product page, GitHub repo, or rough product idea into a finished promo film: brief, storyboard, assets, HyperFrames edit, BGM direction, and delivery notes.
+> A production-grade skill pack for turning real products into credible launch films: product judgment, narrative structure, visual planning, HyperFrames editing, BGM direction, and delivery notes.
 
-Promo Creator Skills is a multi-skill production pipeline for agent-driven product videos. It is designed for builders who want a real product showcase, not a generic AI slideshow: the workflow forces staged thinking, visible intermediate files, real product assets, motion timing, and BGM prompts that behave like product-launch music instead of sleepy tech ambience.
+Most AI-generated promo videos fail for the same reason: they start with visuals before they understand the product. They decorate instead of deciding. They turn a repo, a SaaS page, or a new feature into generic motion graphics.
+
+Promo Creator Skills takes the opposite route. It treats a promo film as a sequence of production decisions: what the product is, why it matters, what the viewer must understand first, which real assets prove it, how each shot moves, and what kind of music actually supports the cut. The result is not a magic button. It is a disciplined agent workflow for making product videos that feel specific, inspectable, and worth shipping.
+
+Use it when the goal is not "make something flashy", but "make the product legible, credible, and worth a second look in 60-90 seconds."
 
 ```bash
 npx skills add kangarooking/promo-creator-skills
@@ -44,6 +48,8 @@ A 90-second Swiss International-style promo for an open-source meta-skill that c
 
 ## What It Does
 
+This pack is built around one principle: **a good product video is a compressed product argument**. The visuals are there to carry that argument, not to hide the absence of one.
+
 | Skill | Job | Output |
 |---|---|---|
 | `promo-brief` | Research the product and choose the narrative direction | `01-brief.md` |
@@ -67,9 +73,21 @@ Product / repo / URL
   -> delivery notes
 ```
 
+Each stage leaves an artifact behind, so you can challenge the reasoning before paying the cost of rendering, regenerating assets, or burning music credits.
+
 ---
 
-## BGM That Does Not Collapse Into AI Slop
+## Why This Is Different
+
+- **It starts with product strategy**: the brief decides audience, positioning, narrative shape, and proof points before any frame is designed.
+- **It designs shots, not vibes**: the storyboard specifies frame composition, typography, timing, motion, and asset needs.
+- **It prefers real product evidence**: screenshots, docs, GitHub data, and interface details carry more weight than decorative AI imagery.
+- **It treats BGM as part of editing**: music prompts include genre, rhythm, bass, hook, energy curve, and hit points instead of vague "premium tech" language.
+- **It keeps the work inspectable**: every phase produces Markdown or source files that can be reviewed, corrected, and reused.
+
+---
+
+## BGM That Does Not Collapse Into Generic AI Ambience
 
 The music skill includes a hard-won product-promo rule: visual minimalism is not the same as ambient music.
 

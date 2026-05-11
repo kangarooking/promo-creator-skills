@@ -1,0 +1,15 @@
+.DS_Store
+__pycache__/
+*.pyc
+.env
+.env.*
+*.log
+
+# Local production runs are working artifacts.
+# Curated public demos live in demos/.
+outputs/
+
+# Generated audio candidates can contain paid API output.
+*.wav
+*.flac
+*.m4a

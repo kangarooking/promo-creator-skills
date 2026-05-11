@@ -1,108 +1,108 @@
 # Promo Creator Skills
 
-English · [中文](README.zh.md)
+[English](README.en.md) · 中文
 
-> A production-grade skill pack for turning real products into credible launch films: product judgment, narrative structure, visual planning, HyperFrames editing, BGM direction, and delivery notes.
+> 一套面向真实产品宣传片的 production-grade Skills：产品判断、叙事结构、视觉规划、HyperFrames 剪辑、BGM 设计和交付清单，全链路跑通。
 
-Most AI-generated promo videos fail for the same reason: they start with visuals before they understand the product. They decorate instead of deciding. They turn a repo, a SaaS page, or a new feature into generic motion graphics.
+大多数 AI 宣传片失败，不是因为动效不够多，而是因为一开始就跳过了产品判断。它们先做画面，再临时找理由；先堆光效，再假装有叙事。最后出来的东西看起来“像视频”，但不像一个真正懂产品的人会拿出去发布的片子。
 
-Promo Creator Skills takes the opposite route. It treats a promo film as a sequence of production decisions: what the product is, why it matters, what the viewer must understand first, which real assets prove it, how each shot moves, and what kind of music actually supports the cut. The result is not a magic button. It is a disciplined agent workflow for making product videos that feel specific, inspectable, and worth shipping.
+Promo Creator Skills 反过来做。它把一支宣传片拆成一组严肃的生产决策：这个产品到底是什么，为什么值得看，观众第一眼应该理解什么，哪些真实素材能证明它，每个镜头如何推进信息，音乐如何托住剪辑节奏。它不是魔法按钮，而是一套让 agent 按专业制作流程工作的技能系统。
 
-Use it when the goal is not "make something flashy", but "make the product legible, credible, and worth a second look in 60-90 seconds."
+适合的目标不是“做得炫一点”，而是：**在 60-90 秒内，把产品讲清楚、讲可信，并让人愿意继续了解。**
 
 ```bash
 npx skills add kangarooking/promo-creator-skills
 ```
 
-If your skill runner does not support `npx skills add`, copy the `promo-*` folders into your agent skills directory.
+如果你的 skill runner 不支持 `npx skills add`，可以手动把 `promo-*` 文件夹复制到你的 agent skills 目录。
 
 ---
 
-## Demo Gallery
+## 案例展示
 
 ### WorkBuddy OPC · Commercial Product Launch
 
-Modern product-launch BGM direction: beat, bass, hook, and CTA momentum. Useful when the video should feel like a launch film rather than background UI music.
+更像现代产品发布广告片：有 beat、bass、hook 和 CTA 推进感。适合产品上架、新能力发布、商业展示。
 
-[Watch MP4](demos/workbuddy-commercial-launch.mp4)
+[观看 MP4](demos/workbuddy-commercial-launch.mp4)
 
 <video src="demos/workbuddy-commercial-launch.mp4" controls width="100%"></video>
 
 ### WorkBuddy OPC · Clean UI Demo Groove
 
-Software-demo BGM direction: cleaner rhythm, UI-card timing, workflow motion, and enough energy to carry real interface shots.
+更像高级软件 UI 演示片：节奏干净，服务界面、卡片矩阵、流程线和时间线卡点。
 
-[Watch MP4](demos/workbuddy-ui-groove.mp4)
+[观看 MP4](demos/workbuddy-ui-groove.mp4)
 
 <video src="demos/workbuddy-ui-groove.mp4" controls width="100%"></video>
 
-### Cangjie Skill · Open Source Project Promo
+### Cangjie Skill · 开源项目宣传片
 
-A 90-second Swiss International-style promo for an open-source meta-skill that compiles books into callable Agent Skills. The point is not louder claims; it is making a valuable method visible: book knowledge becomes triggers, steps, boundaries, and tests an agent can actually use.
+一支 90 秒瑞士国际主义风开源项目宣传片。Cangjie Skill 的价值不在于“又一个读书总结工具”，而在于把高价值书籍的方法论编译成 Agent 可以调用的触发条件、执行步骤、边界和测试。好的开源项目不是把 README 录一遍，而是把它真正值得被记住的系统讲清楚。
 
-[Watch MP4](demos/cangjie-skill-promo.mp4)
+[观看 MP4](demos/cangjie-skill-promo.mp4)
 
 <video src="demos/cangjie-skill-promo.mp4" controls width="100%"></video>
 
 ---
 
-## What It Does
+## 它能做什么
 
-This pack is built around one principle: **a good product video is a compressed product argument**. The visuals are there to carry that argument, not to hide the absence of one.
+这套 Skills 的基本判断是：**好的产品宣传片，本质是一段被压缩过的产品论证。** 画面、动效、音乐都应该服务这个论证，而不是掩盖产品表达的空心。
 
-| Skill | Job | Output |
+| Skill | 职责 | 产物 |
 |---|---|---|
-| `promo-brief` | Research the product and choose the narrative direction | `01-brief.md` |
-| `promo-storyboard` | Write shot-by-shot visual and motion specs | `02-storyboard.md` |
-| `promo-asset-producer` | Plan and gather generated assets plus real product material | `03-asset-plan.md`, `assets/` |
-| `promo-editor` | Build the HyperFrames edit and render the MP4 | `04-edl.md`, `master-edit.html`, `final/promo.mp4` |
-| `promo-music-maker` | Design BGM prompts, hit points, and product-promo music lanes | `06-music-plan.md`, `assets/bgm/` |
-| `promo-workflow` | Orchestrate the whole staged pipeline | delivery-ready run folder |
+| `promo-brief` | 产品研究、卖点提炼、叙事定位 | `01-brief.md` |
+| `promo-storyboard` | 逐镜头分镜、画面、文案、动效说明 | `02-storyboard.md` |
+| `promo-asset-producer` | 生成素材与真实产品素材规划 | `03-asset-plan.md`, `assets/` |
+| `promo-editor` | HyperFrames 剪辑、动效、渲染 | `04-edl.md`, `master-edit.html`, `final/promo.mp4` |
+| `promo-music-maker` | BGM 方向、卡点表、Mureka Prompt | `06-music-plan.md`, `assets/bgm/` |
+| `promo-workflow` | 串联完整制作流程 | 可交付 run 目录 |
 
-The workflow is deliberately staged. A good promo is not a one-shot prompt; it is a chain of decisions:
+整套流程不是一发入魂，而是把宣传片拆成可检查、可修改、可复用的阶段：
 
 ```text
-Product / repo / URL
-  -> brief
-  -> storyboard
-  -> asset plan
-  -> edit decision list
-  -> HyperFrames master edit
-  -> BGM direction and candidates
-  -> final MP4
-  -> delivery notes
+产品 / 仓库 / URL
+  -> 创意简报
+  -> 逐镜头分镜
+  -> 素材计划
+  -> 编辑决策表
+  -> HyperFrames 主剪辑
+  -> BGM 方向和候选
+  -> 最终 MP4
+  -> 交付清单
 ```
 
-Each stage leaves an artifact behind, so you can challenge the reasoning before paying the cost of rendering, regenerating assets, or burning music credits.
+每个阶段都会留下文件，所以你可以在真正昂贵的步骤之前纠偏：渲染之前改分镜，生图之前改素材计划，烧音乐额度之前改 BGM 方向。
 
 ---
 
-## Why This Is Different
+## 为什么它不只是 Prompt 合集
 
-- **It starts with product strategy**: the brief decides audience, positioning, narrative shape, and proof points before any frame is designed.
-- **It designs shots, not vibes**: the storyboard specifies frame composition, typography, timing, motion, and asset needs.
-- **It prefers real product evidence**: screenshots, docs, GitHub data, and interface details carry more weight than decorative AI imagery.
-- **It treats BGM as part of editing**: music prompts include genre, rhythm, bass, hook, energy curve, and hit points instead of vague "premium tech" language.
-- **It keeps the work inspectable**: every phase produces Markdown or source files that can be reviewed, corrected, and reused.
+- **先做产品判断**：brief 阶段先确定受众、定位、叙事结构和证明点，再进入视觉。
+- **写的是镜头，不是氛围词**：storyboard 会拆到构图、字号、时间、动效、素材需求。
+- **真实产品信号优先**：截图、文档、GitHub 数据、界面细节，比 AI 装饰图更有价值。
+- **BGM 属于剪辑，不是背景噪音**：音乐 prompt 明确 genre、rhythm、bass、hook、energy curve 和 hit points。
+- **过程可检查**：每一步都有 Markdown 或源文件，方便复盘、修改和复用。
 
 ---
 
-## BGM That Does Not Collapse Into Generic AI Ambience
+## BGM：不再生成那种“泛科技垫底音乐”
 
-The music skill includes a hard-won product-promo rule: visual minimalism is not the same as ambient music.
+这次专门把 BGM 设计升级了：**Apple 风画面不等于 ambient BGM**。产品宣传片需要节奏、hook、bass movement 和段落变化。
 
-For software product videos, the default pair is now:
+软件产品宣传片默认先走两条已验证方向：
 
-- **Commercial Product Launch**: 118 BPM, tight electronic drums, sidechained synth bass, bright plucked synth hook.
-- **Clean UI Demo Groove**: 112 BPM, syncopated digital percussion, rubbery synth bass, short glass-pluck motif.
+- **Commercial Product Launch**：118 BPM，电子鼓、sidechain bass、明亮 pluck hook，更像产品发布广告片。
+- **Clean UI Demo Groove**：112 BPM，syncopated digital percussion、rubbery synth bass、短促 glass-pluck motif，更像高级 UI 演示片。
 
-This avoids the common failure mode where every option becomes `minimal / ambient / soft pulse / glass ticks` and sounds interchangeable.
+这样不会再出现多个候选都像 `minimal / ambient / soft pulse / glass ticks` 的问题。
 
-Mureka generation is supported through `scripts/mureka.py`:
+Mureka 生成脚本：
 
 ```bash
 export MUREKA_API_KEY="..."
-export MUREKA_API_URL="https://api.mureka.cn" # optional, for the China endpoint
+export MUREKA_API_URL="https://api.mureka.cn" # 国内站可选
 
 python scripts/mureka.py instrumental \
   --prompt "<validated product-promo BGM prompt>" \
@@ -111,41 +111,43 @@ python scripts/mureka.py instrumental \
   --output outputs/promo-runs/<run-id>/assets/bgm/
 ```
 
+没有 API key 也可以使用这个 skill 设计 BGM prompt；只有用户明确要求实际生成音乐时才调用 Mureka。
+
 ---
 
-## Usage
+## 使用方式
 
-Ask your agent:
+对 agent 说：
 
 ```text
-Use promo-workflow to make a 60-second Apple-style product promo for this GitHub repo:
+用 promo-workflow 给这个 GitHub 仓库做一支 60 秒 Apple 风产品宣传片：
 https://github.com/owner/project
 ```
 
-Or:
+或者：
 
 ```text
-Use the promo skills to create a launch video for my SaaS. Pause after the brief and storyboard.
+用这套 promo skills 给我的 SaaS 做发布视频。先出 brief 和 storyboard，我确认后再继续。
 ```
 
-For existing footage or screenshots:
+如果你已经有素材：
 
 ```text
-Use promo-editor and promo-music-maker. I already have the storyboard and assets.
+直接用 promo-editor 和 promo-music-maker。我已经有分镜和截图。
 ```
 
 ---
 
-## Repository Structure
+## 仓库结构
 
 ```text
 promo-creator-skills/
-├── promo-brief/              # product research and creative brief
-├── promo-storyboard/         # shot-by-shot visual specs
-├── promo-asset-producer/     # generated and sourced asset planning
-├── promo-editor/             # HyperFrames edit and render workflow
-├── promo-music-maker/        # product-promo BGM prompt and Mureka workflow
-├── promo-workflow/           # orchestration skill
+├── promo-brief/              # 产品研究与创意简报
+├── promo-storyboard/         # 逐镜头分镜
+├── promo-asset-producer/     # 素材生产与素材计划
+├── promo-editor/             # HyperFrames 剪辑与渲染
+├── promo-music-maker/        # BGM Prompt 与 Mureka 工作流
+├── promo-workflow/           # 总控流程
 ├── references/
 │   ├── mureka_prompt_guide.md
 │   └── product_promo_bgm_prompting.md
@@ -157,39 +159,37 @@ promo-creator-skills/
     └── cangjie-skill-promo.mp4
 ```
 
-`SKILL.md` at the repository root is a lightweight entrypoint for installers that expect a root skill file; the detailed workflow still lives in the `promo-*` folders.
+仓库根目录的 `SKILL.md` 是一个轻量入口，方便只识别根 skill 的安装器；具体流程仍然在各个 `promo-*` 子 skill 中。
 
 ---
 
-## Requirements
+## 环境依赖
 
 - Node.js 22+
-- HyperFrames CLI for HTML-to-video work
-- FFmpeg available on `PATH`
+- HyperFrames CLI
+- FFmpeg
 - Python 3.10+
-- `requests` for Mureka API calls
-- Optional: `MUREKA_API_KEY` for BGM generation
-
-The skills can still design BGM prompts without an API key; they only call Mureka when explicitly asked to generate audio.
+- `requests` Python 包
+- 可选：`MUREKA_API_KEY`，用于实际生成 BGM
 
 ---
 
-## Design Principles
+## 设计原则
 
-- **Intermediate files over black boxes**: every major decision lands in Markdown before render.
-- **Real product signal first**: UI screenshots, docs, GitHub data, and brand assets beat decorative filler.
-- **Storyboard before assets**: image generation without a shot plan is expensive randomness.
-- **Music has a job**: product videos need rhythm, hook, bass movement, and section contrast.
-- **Pause points are part of quality**: good agent workflows invite correction before the expensive step.
+- **中间文件优先**：每个关键决策先落 Markdown，再进入渲染。
+- **真实产品信号优先**：UI 截图、文档、GitHub 数据、品牌素材，优先级高于装饰图。
+- **先分镜，后素材**：没有 shot plan 的生图只是烧钱随机数。
+- **音乐必须服务画面**：产品片需要 rhythm、hook、bass 和 section contrast。
+- **暂停点就是质量控制**：在贵的步骤之前，让用户有机会纠偏。
 
 ---
 
-## Limitations
+## 边界
 
-- This is a skill pack, not a hosted video editor.
-- Final visual quality depends on available product assets and the agent's render environment.
-- Mureka output can vary; generate 2-3 candidates and pick by watching the video, not by listening in isolation.
-- Large local production runs are ignored by git; curated public examples live in `demos/`.
+- 这是 skill pack，不是托管视频编辑器。
+- 最终质量取决于产品素材质量和本地渲染环境。
+- Mureka 生成有随机性，建议一次生成 2-3 条，放回视频里看，而不是单独听音频决定。
+- 本地完整生产过程放在 `outputs/`，默认不进 git；公开案例放在 `demos/`。
 
 ---
 

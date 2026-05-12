@@ -154,7 +154,7 @@ promo-creator-skills/
     └── mureka.py
 ```
 
-仓库根目录的 `SKILL.md` 是一个轻量入口，方便只识别根 skill 的安装器；具体流程仍然在各个 `promo-*` 子 skill 中。
+仓库根目录的 `SKILL.md` 是完整总控入口：只读它也能跑通主流程；各个 `promo-*` 子 skill 保留更细的阶段规范，方便单独调用和深度执行。
 
 ---
 

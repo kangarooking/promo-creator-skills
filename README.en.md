@@ -152,7 +152,7 @@ promo-creator-skills/
     └── mureka.py
 ```
 
-`SKILL.md` at the repository root is a lightweight entrypoint for installers that expect a root skill file; the detailed workflow still lives in the `promo-*` folders.
+`SKILL.md` at the repository root is the full orchestration entrypoint: it can run the main workflow on its own, while the `promo-*` folders keep deeper stage-specific guidance for focused execution.
 
 ---
 

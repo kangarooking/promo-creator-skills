@@ -1,6 +1,6 @@
 ---
 name: promo-asset-producer
-description: 宣传片两包素材生产。Pack A 使用 GPT Image 2 生成产品图、概念图、UI 模拟图；Pack B 使用浏览器搜索下载产品截图、开源素材。当 storyboard 确认后自动进入。
+description: 宣传片两包素材生产。Pack A 使用当前可用图片生成能力生成产品图、概念图、UI 模拟图或风格补充图；Pack B 使用官网、应用截图、浏览器搜索、GitHub 或开源素材收集真实产品信号。当 storyboard 确认后进入。
 ---
 
 # Promo Asset Producer — 两包素材生产
